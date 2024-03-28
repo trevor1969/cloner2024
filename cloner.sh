@@ -5,10 +5,12 @@
 BBasis=1
 QQuelle="--lokales Quellverzeichnis--"                  # Quell-Verzeichnis
 ZZiel="name@192.168.0.222:/home/whatever/"              # Ziel-Verzeichnis
-AArchiv="/home/archivverzeichnis/$(date +%Y-%m-%d-%H)"  # Archiv-Verzeichnis
-LLogbuch="/home/alf/tmparchiv/log.txt"                  # Pfad zum Logbuch
+AArchiv="$ZZiel/archiv/$(date +%Y-%m-%d-%H)"  # Archiv-Verzeichnis
+LLogbuch="$ZZiel/log.txt"                  # Pfad zum Logbuch
 # AAusnahmen="--exclude "                               # Ausnahmen
 AAusnahmen=""
+
+mkdir $ZZiel $ZZiel/archiv
 
 echo " " >>$LLogbuch
 echo " " >>$LLogbuch
