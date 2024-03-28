@@ -31,5 +31,5 @@ fi
 
 if [ $BBasis = 2 ]
 then
-
+  echo "Noch nicht eingerichtet!"
 fi
